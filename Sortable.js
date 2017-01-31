@@ -912,28 +912,30 @@
 		},
 
 		_nulling: function() {
-			rootEl =
-			dragEl =
-			parentEl =
-			ghostEl =
-			nextEl =
-			cloneEl =
+			if (Sortable.active === this || !Sortable.active) {
+				rootEl =
+				dragEl =
+				parentEl =
+				ghostEl =
+				nextEl =
+				cloneEl =
 
-			scrollEl =
-			scrollParentEl =
+				scrollEl =
+				scrollParentEl =
 
-			tapEvt =
-			touchEvt =
+				tapEvt =
+				touchEvt =
 
-			moved =
-			newIndex =
+				moved =
+				newIndex =
 
-			lastEl =
-			lastCSS =
+				lastEl =
+				lastCSS =
 
-			putSortable =
-			activeGroup =
-			Sortable.active = null;
+				putSortable =
+				activeGroup =
+				Sortable.active = null;
+			}
 		},
 
 		handleEvent: function (/**Event*/evt) {
